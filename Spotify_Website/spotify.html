@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotify.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+   
+  </head>
+  <body>
+    <div class="main-Page flex">
+      <div class="left-sec border">
+        <span class="material-symbols-outlined" id="close">close</span>
+        <div class="home m-1 p-1 rounded bg-grey">
+          <div><img class="invert" src="Images/logo.svg" alt="logo" /></div>
+          <ul>
+            <li><img class="invert" src="Images/home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="Images/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library m-1 p-1 rounded bg-grey">
+          <div class="library-part">
+            <img class="invert" src="Images/playlist.svg" />
+            <h1>Your Library</h1>
+           
+          </div>
+           <div class="song-list scroll_bar">
+             <ul>
+              
+             </ul>
+
+            </div>
+          <footer>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="right-sec border">
+        <div class="header">
+          <div class="navbar">
+            <span class="material-symbols-outlined" id="menu">menu</span>
+            <span class="material-symbols-outlined">keyboard_arrow_left</span>
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
+          <div class="buttons">
+            <button class="sign-up">Sign Up</button>
+            <button class="log-in">Log In</button>
+          </div>
+        </div>
+        
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          </div>
+          <div class="card-container scroll_bar" id="cardContainer">
+            <div class="card">
+              <img src="Images/song_1.webp" width="100%" />
+
+              <h1>Happy Hits!</h1>
+              <p>Hits to boost your mood and fill you with happiness</p>
+              <div class="play-butu">
+                <span class="material-icons">play_arrow</span>
+              </div>
+            </div>
+            
+          </div>
+         
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle">
+
+              </div>
+            </div>
+             <div class="song-info">
+
+             </div>
+            
+            <div class="song-buttons">
+            
+             <span class="material-symbols-outlined" id="previous">skip_previous</span>
+              
+              <img src="Images/play.svg" class="invert" id="playBtn">
+              <span class="material-symbols-outlined" id="next">skip_next</span>
+            </div>
+              <div class="volume-contaier">
+            <div class="song-time">
+
+            </div>
+            <div class="volume-container">
+            <div class="volume">
+            <img src="Images/volume_up.svg" alt="volume_up" class="invert">
+            </div>
+            <input type="range" min="0" max="100" value="10">
+            </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <script src="spotify.js"></script>
+  </body>
+</html>
